@@ -1,0 +1,235 @@
+.card {
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px #00000026;
+  width: 540px;
+  height: 534px;
+}
+.card-text {
+  font: normal normal bold 20px Montserrat;
+  color: black;
+}
+.card-text1 {
+  font: normal normal normal 16px Montserrat;
+  color: black;
+}
+
+.line {
+  border-top: 1px solid #cccccc;
+  width: 260px;
+  position: center;
+}
+.line1 {
+  border-top: 1px solid #cccccc;
+  width: 539px;
+  position: center;
+}
+.navbar {
+  border-bottom: 1px solid #cccccc;
+}
+.btn {
+  position: relative;
+  left: 1144px;
+  height: 17px;
+  text-align: left;
+  font: normal normal normal 14px Lato;
+  color: #333333;
+  border: #cccccc;
+}
+.button {
+  width: 82px;
+  height: 32px;
+  background: #e6e6e6 0% 0%;
+  border-radius: 280px;
+  border: 0px;
+  text-align: center;
+  font: normal normal bold 14px Lato;
+  color: #ffffff;
+  opacity: 1;
+  margin-left: 438px;
+}
+.title {
+  font: normal normal bold 24px Lato;
+}
+.text1 {
+  font: normal normal bold 14px Lato;
+  padding-left: 20px;
+  padding-bottom: 17px;
+}
+.form-group {
+  width: 420px;
+  margin-left: 20px;
+  border-radius: 8px;
+}
+
+.view {
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  width: 420px;
+  height: 42px;
+  font: normal normal normal 16px/19px Montserrat;
+  color: #000000;
+}
+.search {
+  width: 260px;
+  font: normal normal bold 12px Lato;
+  letter-spacing: 0px;
+  color: #cccccc;
+  height: 48px;
+  margin-left: 281px;
+  border-radius: 8px;
+  opacity: 1;
+}
+.button {
+  background: #009bdf 0% 0%;
+  border-radius: 28px;
+  border: 0px;
+  text-align: center;
+  font: normal normal bold 14px;
+  color: #ffffff;
+  width: 76px;
+  height: 32px;
+  margin-left: 170px;
+  margin-bottom: 20px;
+}
+button:disabled,
+button[disabled] {
+  border: 1px solid #e6e6e6;
+  background-color: #e6e6e6;
+  color: #ffffff;
+}
+.Addbutton {
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #009bdf;
+  border-radius: 28px;
+  color: #009bdf;
+  font: normal normal bold 14px Lato;
+  left: 445px;
+  width: 75px;
+  height: 32px;
+}
+.button1 {
+  background-color: white;
+  width: 131px;
+  height: 40px;
+  border: 1px solid #009bdf;
+  border-radius: 20px;
+  text-align: center;
+  font: normal normal bold 16px/19px Lato;
+  color: #009bdf;
+  position: absolute;
+  bottom: 0;
+  margin-left: 215px;
+}
+
+.button2 {
+  font: normal normal bold 16px/19px Lato;
+  background: #009bdf 0% 0%;
+  border-radius: 280px;
+  border: 0px;
+  height: 40px;
+  width: 131px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+}
+.feeds {
+  text-align: left;
+  font: normal normal medium 20px Lato;
+  margin-left: 205px;
+}
+@media screen and (max-width: 760px) {
+  .card {
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px #00000026;
+    width: auto;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+
+  .card-text {
+    font: normal normal bold 20px Montserrat;
+    color: black;
+  }
+  .card-text1 {
+    font: normal normal normal 16px Montserrat;
+    color: black;
+  }
+  .line1 {
+    border-top: 1px solid #cccccc;
+    width: auto;
+    position: center;
+  }
+
+  .form-group {
+    width: auto;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
+  .view {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    width: 207px;
+    height: 42px;
+    font: normal normal normal 16px/19px Montserrat;
+    color: #000000;
+  }
+  .title {
+    font: normal normal bold 24px Lato;
+    margin-left: 36px;
+    margin-bottom: 28.5px;
+  }
+  .Addbutton {
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #009bdf;
+    border-radius: 20px;
+
+    color: #009bdf;
+    font: normal normal bold 14px Lato;
+    left: 238px;
+    width: 75px;
+    height: 32px;
+    opacity: 1;
+    float: right;
+    margin-right: 0px;
+  }
+
+  .button1 {
+    background-color: white;
+    width: 131px;
+    height: 40px;
+    border: 1px solid #009bdf;
+    border-radius: 20px;
+    text-align: center;
+    font: normal normal bold 16px/19px Lato;
+    color: #009bdf;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 12px;
+  }
+  .button2 {
+    font: normal normal bold 16px/19px Lato;
+    background: #009bdf 0% 0%;
+    border-radius: 280px;
+    border: 0px;
+    height: 40px;
+    width: 131px;
+    text-align: center;
+    color: #ffffff;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    margin-right: 12px;
+  }
+}

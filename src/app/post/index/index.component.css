@@ -1,0 +1,81 @@
+/* .container{
+    margin-right: 231px;
+} */
+
+.card {
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px #00000026;
+  width: 536px;
+
+  margin-left: 205px;
+}
+.card-text {
+  font: normal normal bold 20px Montserrat;
+  color: black;
+}
+.card-text1 {
+  font: normal normal normal 16px Montserrat;
+  color: black;
+}
+
+.line {
+  border-top: 1px solid #cccccc;
+  width: 260px;
+}
+.navbar {
+  border-bottom: 1px solid #cccccc;
+}
+.logout {
+  position: relative;
+  background-color: white;
+  left: 1144px;
+  text-align: left;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+  font: normal normal normal 14px Lato;
+  color: #333333;
+}
+
+.button {
+  background: #009bdf 0% 0%;
+  border-radius: 28px;
+  border: 0px;
+  text-align: center;
+  font: normal normal bold 14px;
+  color: #ffffff;
+  width: 76px;
+  height: 32px;
+  margin-left: 170px;
+  margin-bottom: 20px;
+}
+
+.feeds {
+  text-align: left;
+  font: normal normal medium 20px Lato;
+  margin-left: 190px;
+}
+@media screen and (max-width: 760px) {
+  .feeds {
+    margin-left: 26px;
+    width: 70px;
+  }
+  .card {
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px #00000026;
+    width: 246px;
+    position: relative;
+    margin-right: 36px;
+    margin-left: 0px;
+  }
+  .line {
+    border-top: 1px solid #cccccc;
+    width: 35px;
+  }
+  .form-group {
+    margin-top: 0px;
+  }
+}

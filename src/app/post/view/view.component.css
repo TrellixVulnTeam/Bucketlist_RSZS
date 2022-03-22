@@ -1,0 +1,289 @@
+.card {
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px #00000026;
+  width: 540px;
+  height: 534px;
+}
+.card-text {
+  font: normal normal bold 20px Montserrat;
+  color: black;
+}
+.card-text1 {
+  font: normal normal normal 16px Montserrat;
+  color: black;
+}
+
+.line {
+  border-top: 1px solid #cccccc;
+  width: 260px;
+  position: center;
+}
+.line1 {
+  border-top: 1px solid #cccccc;
+  width: 539px;
+  position: center;
+}
+.navbar {
+  border-bottom: 1px solid #cccccc;
+}
+.btn {
+  position: relative;
+  left: 1144px;
+  height: 17px;
+  text-align: left;
+  font: normal normal normal 14px Lato;
+  color: #333333;
+  border: #cccccc;
+}
+.button {
+  width: 82px;
+  height: 32px;
+  background: #e6e6e6 0% 0%;
+  border-radius: 280px;
+  border: 0px;
+  text-align: center;
+  font: normal normal bold 14px Lato;
+  color: #ffffff;
+  opacity: 1;
+  margin-left: 438px;
+}
+.title {
+  font: normal normal bold 24px Lato;
+}
+.text1 {
+  font: normal normal bold 14px Lato;
+  padding-left: 20px;
+  padding-bottom: 17px;
+}
+.form-group {
+  width: 500px;
+  margin-left: 20px;
+}
+.view {
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  width: 500px;
+  height: 42px;
+  font: normal normal normal 16px/19px Montserrat;
+  color: #000000;
+}
+.icon {
+  position: relative;
+  margin: auto;
+  left: 225px;
+  width: 18px;
+  height: 18px;
+}
+.search {
+  width: 260px;
+  font: normal normal bold 12px Lato;
+  letter-spacing: 0px;
+  color: #cccccc;
+  height: 48px;
+  margin-left: 281px;
+  border-radius: 8px;
+  opacity: 1;
+}
+.button {
+  background: #009bdf 0% 0%;
+  border-radius: 28px;
+  border: 0px;
+  text-align: center;
+  font: normal normal bold 14px;
+  color: #ffffff;
+  width: 76px;
+  height: 32px;
+  margin-left: 170px;
+  margin-bottom: 20px;
+}
+.Editbutton {
+  position: absolute;
+  background: #ffffff 0% 0%;
+  border-radius: 28px;
+  border: 1px solid #009bdf;
+  text-align: center;
+  color: #009bdf;
+  font: normal normal bold 14px Lato;
+  left: 445px;
+  width: 75px;
+  height: 32px;
+}
+.Deletebutton {
+  position: absolute;
+  background: white 0% 0%;
+  border-radius: 28px;
+  border: 1px solid #c40d42;
+  font: normal normal bold 16px/19px Lato;
+  text-align: center;
+  color: #c40d42;
+  margin-top: 320px;
+  left: 240px;
+  width: 131px;
+  height: 40px;
+}
+.Publishbutton {
+  position: absolute;
+  background: #e4e4e4 0% 0%;
+  border-radius: 28px;
+  border: 0px solid;
+  font: normal normal bold 16px/19px Lato;
+  text-align: center;
+  color: white;
+  margin-top: 320px;
+  left: 390px;
+  width: 131px;
+  height: 40px;
+}
+.No {
+  font: normal normal bold 14px/17px Lato;
+  color: #333333;
+  opacity: 1;
+  text-align: center;
+}
+.Addbutton {
+  background: #009bdf 0% 0%;
+  border-radius: 280px;
+  border: 0px;
+  text-align: center;
+  font: normal normal bold 14px/17px Lato;
+  color: #ffffff;
+  width: 75px;
+  height: 32px;
+  left: 822px;
+}
+.Modifybutton {
+  width: 82px;
+  height: 32px;
+  background: white 0% 0%;
+  border-radius: 28px;
+  border: 1px solid #009bdf;
+  text-align: center;
+  font: normal normal bold 14px/17px Lato;
+  color: #009bdf;
+  opacity: 1;
+  float: right;
+}
+.button1 {
+  background-color: white;
+  width: 131px;
+  height: 40px;
+  border: 1px solid #c40d42;
+  border-radius: 20px;
+  text-align: center;
+  font: normal normal bold 16px/19px Lato;
+  color: #c40d42;
+  position: absolute;
+  bottom: 0;
+  margin-left: 215px;
+}
+.button2 {
+  font: normal normal bold 16px/19px Lato;
+  background: #e6e6e6 0% 0%;
+  border-radius: 280px;
+  border: 0px;
+  height: 40px;
+  width: 131px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+}
+.feeds {
+  text-align: left;
+  font: normal normal medium 20px Lato;
+  margin-left: 205px;
+}
+.NoResult {
+  width: 250px;
+  height: auto;
+}
+@media screen and (max-width: 760px) {
+  .card {
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px #00000026;
+    width: auto;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+
+  .card-text {
+    font: normal normal bold 20px Montserrat;
+    color: black;
+  }
+  .card-text1 {
+    font: normal normal normal 16px Montserrat;
+    color: black;
+  }
+  .line1 {
+    border-top: 1px solid #cccccc;
+    width: auto;
+    position: center;
+  }
+
+  .form-group {
+    width: auto;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
+  .view {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    width: 300px;
+    height: 42px;
+    font: normal normal normal 16px/19px Montserrat;
+    color: #000000;
+  }
+  .title {
+    font: normal normal bold 24px Lato;
+    margin-left: 36px;
+    margin-bottom: 28.5px;
+  }
+  .Addbutton {
+    background: #009bdf 0% 0%;
+    border-radius: 280px;
+    border: 0px;
+    text-align: center;
+    font: normal normal bold 14px/17px Lato;
+    color: #ffffff;
+    width: 75px;
+    height: 32px;
+    left: 822px;
+    margin-right: 2px;
+  }
+
+  .button1 {
+    background-color: white;
+    width: 131px;
+    height: 40px;
+    border: 1px solid #c40d42;
+    border-radius: 20px;
+    text-align: center;
+    font: normal normal bold 16px/19px Lato;
+    color: #c40d42;
+    position: absolute;
+    bottom: 0;
+    margin-left: 0px;
+  }
+  .button2 {
+    font: normal normal bold 16px/19px Lato;
+    background: #e6e6e6 0% 0%;
+    border-radius: 280px;
+    border: 0px;
+    height: 40px;
+    width: 131px;
+    text-align: center;
+    color: #ffffff;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    margin-right: 12px;
+  }
+}

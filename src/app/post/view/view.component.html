@@ -1,0 +1,79 @@
+<body>
+  <section>
+    <div class="row row-cols-1 row-cols-lg-2 pt-5">
+      <div class="d-none d-md-inline">
+        <p href="#" routerLink="/post/index/" class="feeds">
+          <img src="../assets/pc.png" routerLink="/post/index/" />
+          <span> Feeds</span>
+        </p>
+        <p href="#" routerLink="/post/view/" class="feeds">
+          <img src="../assets/bill.png" routerLink="/post/view/" />
+          <span class="d-none d-md-inline"> Bucket List</span>
+        </p>
+        <p class="line feeds"></p>
+        <p
+          href="#"
+          (click)="ShowDiv('Search')"
+          class="feeds"
+          routerLink="/post/search/"
+        >
+          <img src="../assets/Search.png" routerLink="/post/search/" />
+          <span class="d-none d-md-inline"> Stalk</span>
+        </p>
+      </div>
+      <div class="col-lg-4 p-0">
+        <div class="title">Create Bucket List</div>
+        <form class="card card-text mt-2 mb-2" name="form" #f="ngForm">
+          <div class="text1 mt-5">YOUR BUCKETLIST</div>
+          <p class="line1"></p>
+
+          <div class="form-group">
+            <div>
+              <div *ngFor="let data of BucketArrays">
+                <div *ngFor="let datas of data.bucketItems">
+                  <input
+                    class="view p-2 mb-3"
+                    (click)="toggleDisable()"
+                    [disabled]="disableTextbox"
+                    placeholder="{{ datas.items }}"
+                  />
+                </div>
+                <div>
+                  <button class="Modifybutton mt-2" routerLink="/post/edit/">
+                    Modify
+                  </button>
+                  <button
+                    class="button1 mb-4"
+                    (click)="delete(data.bucketItems)"
+                    routerLink="/post/index/"
+                  >
+                    Delete All
+                  </button>
+                  <button class="button2 mb-4" [disabled]>Publish</button>
+                </div>
+              </div>
+              <div
+                class="container mt-4 justify-content-center col-md-12 text-center"
+              >
+                <div *ngIf="!BucketArrays?.length">
+                  <!--If "bucketlist" not exists-->
+                  <div class="No">No Bucket List</div>
+                  <img
+                    src="../assets/78347-no-search-result.gif"
+                    class="NoResult"
+                  />
+                  <p>
+                    <button class="Addbutton mt-4" routerLink="/post/create/">
+                      Add
+                    </button>
+                  </p>
+                </div>
+              </div>
+              <p></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>

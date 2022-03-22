@@ -1,0 +1,81 @@
+<body>
+  <section>
+    <div class="row row-cols-1 row-cols-lg-2 pt-5">
+      <div>
+        <p href="#" routerLink="/post/index/" class="feeds">
+          <img
+            src="../assets/pc.png"
+            class="col-xs-6"
+            routerLink="/post/index/"
+          />
+          <span class="d-none d-md-inline"> Feeds</span>
+        </p>
+        <p href="#" routerLink="/post/view/" class="feeds">
+          <img
+            src="../assets/bill.png"
+            class="col-xs-6"
+            routerLink="/post/view/"
+          />
+          <span class="d-none d-md-inline"> Bucket List</span>
+        </p>
+        <p class="line feeds"></p>
+
+        <p
+          href="#"
+          (click)="ShowDiv('Search')"
+          class="feeds"
+          routerLink="/post/search/"
+        >
+          <img
+            src="../assets/Search.png"
+            class="col-xs-6"
+            routerLink="/post/search/"
+          />
+          <span class="d-none d-md-inline"> Stalk</span>
+        </p>
+        <!-- Search field -->
+        <div>
+          <form
+            class="search"
+            (ngSubmit)="findSearch()"
+            name="form"
+            #f="ngForm"
+          >
+            <input
+              class="form-control"
+              name="email"
+              id="email"
+              type="text"
+              class="view p-2"
+              [(ngModel)]="form.email"
+              required
+              #email="ngModel"
+              placeholder="Stalk by email"
+            />
+            <button class="button" type="findSearch">Stalk</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-4 pb-5">
+        <div>
+          <div
+            class="card card-text mt-4 pb-3"
+            *ngFor="let data of Displaybucketlist"
+          >
+            <h4 class="card-text mt-4 mx-4">{{ data.email }}</h4>
+            <div class="card-text1" *ngFor="let datas of data.bucketItems">
+              <h4 class="card-text1 mx-4">{{ datas.items }}</h4>
+            </div>
+          </div>
+        </div>
+        <!--If "email" not exists-->
+        <div class="mt-4 text-center">
+          <div *ngIf="!Displaybucketlist?.length">
+            <div class="No">No Results Found</div>
+            <img src="../assets/78347-no-search-result.gif" class="NoResult" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>

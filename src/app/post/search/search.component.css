@@ -1,0 +1,120 @@
+.container {
+  margin-right: 231px;
+}
+.card {
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px #00000026;
+  width: 536px;
+}
+.card-text {
+  font: normal normal bold 20px Montserrat;
+  color: black;
+}
+.card-text1 {
+  font: normal normal normal 16px Montserrat;
+  color: black;
+}
+
+.line {
+  border-top: 1px solid #cccccc;
+  width: 260px;
+}
+.navbar {
+  border-bottom: 1px solid #cccccc;
+}
+.logout {
+  position: relative;
+  background-color: white;
+  left: 1144px;
+  text-align: left;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+  font: normal normal normal 14px Lato;
+  color: #333333;
+}
+.search {
+  width: 260px;
+  font: normal normal bold 12px Lato;
+  letter-spacing: 0px;
+  color: #cccccc;
+  height: 48px;
+  margin-left: 200px;
+  border-radius: 8px;
+  opacity: 1;
+}
+.button {
+  background: #009bdf 0% 0%;
+  border-radius: 28px;
+  border: 0px;
+  text-align: center;
+  font: normal normal bold 14px;
+  color: #ffffff;
+  width: 60px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+  margin-left: 380px;
+  margin-top: 8px;
+}
+.view {
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  width: 260px;
+  height: 48px;
+  font: normal normal normal 12px lato;
+  color: #000000;
+}
+.feeds {
+  text-align: left;
+  font: normal normal medium 20px Lato;
+  margin-left: 205px;
+}
+.NoResult {
+  width: 250px;
+  height: auto;
+}
+@media screen and (max-width: 760px) {
+  .feeds {
+    margin-left: 26px;
+  }
+
+  .line {
+    border-top: 1px solid #cccccc;
+    width: 35px;
+  }
+  .search {
+    width: 200px;
+    font: normal normal bold 12px Lato;
+    letter-spacing: 0px;
+    color: #cccccc;
+    height: 48px;
+    margin-left: 100px;
+    border-radius: 8px;
+    opacity: 1;
+  }
+  .button {
+    background: #009bdf 0% 0%;
+    border-radius: 28px;
+    border: 0px;
+    text-align: center;
+    font: normal normal bold 14px;
+    color: #ffffff;
+    width: 60px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 275px;
+    margin-top: 211px;
+  }
+  .card {
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px #00000026;
+    width: 246px;
+    margin-left: 90px;
+  }
+}

@@ -1,0 +1,166 @@
+<body>
+  <section>
+    <div class="row row-cols-1 row-cols-lg-2 pt-5">
+      <div class="d-none d-md-inline">
+        <p href="#" routerLink="/post/index/" class="feeds">
+          <img src="../assets/pc.png" routerLink="/post/index/" />
+          <span> Feeds</span>
+        </p>
+        <p href="#" routerLink="/post/view/" class="feeds">
+          <img src="../assets/bill.png" routerLink="/post/view/" />
+          <span class="d-none d-md-inline"> Bucket List</span>
+        </p>
+        <p class="line feeds"></p>
+        <p
+          href="#"
+          (click)="ShowDiv('Search')"
+          class="feeds"
+          routerLink="/post/search/"
+        >
+          <img src="../assets/Search.png" routerLink="/post/search/" />
+          <span class="d-none d-md-inline"> Stalk</span>
+        </p>
+      </div>
+      <div class="col-lg-4 p-0">
+        <div class="title">Update Bucket List</div>
+        <div>
+          <form
+            class="card card-text mt-2 mb-2"
+            [formGroup]="form"
+            (ngSubmit)="submit(form.value)"
+          >
+            <div class="text1 mt-5">YOUR BUCKETLIST</div>
+            <div class="line1 mb-3"></div>
+            <div class="container">
+              <!-- <div> -->
+              <!-- <div *ngFor="let bucketArrays of BucketArrays">
+                  <div *ngFor="let BucketArrays of bucketArrays.bucketItems">
+                    <div class="form-group-row">
+                      <div style="float: left">
+                        <input
+                          class="view p-2 mb-3"
+                          [(ngModel)]="BucketArrays.items"
+                          id="bucketItems"
+                          (keyup)="onKey($event)"
+                          formControlName="items"
+                        />
+                      </div>
+                      <div style="float: right">
+                        <img
+                          class="icon mx-2"
+                          src="../assets/Edit.png"
+                          (click)="isDisabled = false"
+                        />
+                        <img
+                          class="icon mx-4"
+                          class="btn-remove"
+                          type="button"
+                          src="../assets/delete.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+              <div>
+                <div *ngFor="let bucketArrays of BucketArrays">
+                  <div *ngFor="let BucketArrays of bucketArrays.bucketItems">
+                    <ng-container
+                      formArrayName="bucketItems"
+                      *ngFor="
+                        let bucketArrays of bucketItems.controls;
+                        index as i
+                      "
+                    >
+                      <div>
+                        <ng-container [formGroupName]="i">
+                          <input
+                            name="bucketItems"
+                            id="bucketItems"
+                            type="text"
+                            class="view p-2 mb-3"
+                            [(ngModel)]="[BucketArrays.items][i]"
+                            placeholder="Description"
+                            formControlName="items"
+                            (keyup)="onKey($event)" />
+                          <div style="float: right">
+                            <img class="icon mx-2" src="../assets/Edit.png" />
+                            <img
+                              class="icon mx-4"
+                              class="btn-remove"
+                              (click)="removeItemsField(i)"
+                              type="button"
+                              src="../assets/delete.png"
+                            /></div
+                        ></ng-container></div
+                    ></ng-container>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="Addbutton mt-3"
+                    type="button"
+                    (click)="addItemsField()"
+                    [disabled]="click"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+              <div>
+                <button class="button1 mb-4" routerLink="/post/view/">
+                  Cancel
+                </button>
+                <button class="button2 mb-4" type="submit" [disabled]="click">
+                  Publish
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- <div class="title">Create Bucket List</div>
+        <form class="card card-text mt-2 mb-2" name="form" #f="ngForm">
+          <div class="text1 mt-5">YOUR BUCKETLIST</div>
+          <p class="line1"></p>
+
+          <div class="form-group">
+            <div>
+              <div *ngFor="let data of posts">
+                <div *ngFor="let datas of data.bucketItems">
+                  <input
+                    class="view p-2 mb-3"
+                    placeholder="{{ datas.items }}"
+                  />
+                </div>
+                <div> -->
+        <!-- <input
+              name="bucketItems"
+              id="bucketItems"
+              type="text"
+              class="form-control"
+              [(ngModel)]="form.bucketItems"
+              required
+              placeholder="Description...."
+              #bucketItems="ngModel"
+            /> -->
+        <!-- </div>
+                <img class="icon" src="../assets/Edit.png" />
+                <img class="icon mx-4" src="../assets/delete.png" />
+                <div class="container mt-2"> -->
+        <!-- <button class="Addbutton">Add</button> -->
+        <!-- <button class="button1 mb-4" routerLink="/post/view/">
+                    Cancel
+                  </button>
+
+                  <button class="button2 mb-4 mx-4" type="submit">
+                    Publish
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form> -->
+      </div>
+    </div>
+  </section>
+</body>
