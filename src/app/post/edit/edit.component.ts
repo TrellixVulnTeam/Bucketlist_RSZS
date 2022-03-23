@@ -1,24 +1,24 @@
-import { Component, OnInit } from '@angular/core';
-import { PostService } from '../post.service';
-import { ActivatedRoute, Router } from '@angular/router';
-import { Post } from '../post';
-import { bucketArrays } from '../bucketArrays';
+import { Component, OnInit } from "@angular/core";
+import { PostService } from "../post.service";
+import { ActivatedRoute, Router } from "@angular/router";
+import { Post } from "../post";
+import { bucketArrays } from "../bucketArrays";
 import {
   ReactiveFormsModule,
   FormGroup,
   FormBuilder,
   FormArray,
-} from '@angular/forms';
+} from "@angular/forms";
 
 @Component({
-  selector: 'app-edit',
-  templateUrl: './edit.component.html',
-  styleUrls: ['./edit.component.css'],
+  selector: "app-edit",
+  templateUrl: "./edit.component.html",
+  styleUrls: ["./edit.component.css"],
 })
 export class EditComponent implements OnInit {
   BucketArrays: bucketArrays | any;
   email: string | undefined;
-  currAdd: string = '';
+  currAdd: string = "";
   Displaybucketlist: any = [];
   isDisabled: boolean = true;
 
@@ -36,14 +36,14 @@ export class EditComponent implements OnInit {
   }
   onKey(event: KeyboardEvent) {
     // if value is not empty the set click to false otherwise true
-    this.click = (event.target as HTMLInputElement).value === '' ? true : false;
+    this.click = (event.target as HTMLInputElement).value === "" ? true : false;
   }
 
   ShowAdd(addVal: string) {
     this.currAdd = addVal;
   }
 
-  currDiv: string = '';
+  currDiv: string = "";
   ShowDiv(divVal: string): void {
     this.currDiv = divVal;
   }
@@ -56,7 +56,7 @@ export class EditComponent implements OnInit {
   ) {}
 
   bucketArrays = {
-    bucketItems: [{ items: '' }],
+    bucketItems: [{ items: "" }],
   };
 
   ngOnInit(): void {
@@ -71,7 +71,7 @@ export class EditComponent implements OnInit {
   });
 
   get bucketItems(): FormArray {
-    return this.form.get('bucketItems') as FormArray;
+    return this.form.get("bucketItems") as FormArray;
   }
 
   buildItems(bucketItems: { items: string }[] = []) {
@@ -100,8 +100,8 @@ export class EditComponent implements OnInit {
     this.BucketArrays = bucketItems;
     console.log(this.BucketArrays);
     this.postService.update(bucketItems).subscribe((res: any) => {
-      console.log('Bucketlist updated successfully!');
-      this.router.navigateByUrl('post/view');
+      console.log("Bucketlist updated successfully!");
+      this.router.navigateByUrl("post/view");
     });
   }
   // submit(){

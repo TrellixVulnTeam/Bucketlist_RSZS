@@ -63,8 +63,8 @@
                 </div> -->
 
               <div>
-                <div *ngFor="let bucketArrays of BucketArrays">
-                  <div *ngFor="let BucketArrays of bucketArrays.bucketItems">
+                <div>
+                  <div>
                     <ng-container
                       formArrayName="bucketItems"
                       *ngFor="
@@ -79,11 +79,10 @@
                             id="bucketItems"
                             type="text"
                             class="view p-2 mb-3"
-                            [(ngModel)]="[BucketArrays.items][i]"
                             placeholder="Description"
                             formControlName="items"
                             (keyup)="onKey($event)" />
-                          <div style="float: right">
+                          <div class="icon mt-2 mx-3" style="float: right">
                             <img class="icon mx-2" src="../assets/Edit.png" />
                             <img
                               class="icon mx-4"
