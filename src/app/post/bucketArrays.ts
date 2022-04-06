@@ -1,7 +1,3 @@
 export interface bucketArrays {
-  bucketItems: [
-    {
-      items: '';
-    }
-  ];
+  bucketItems: [{ items: "" }];
 }

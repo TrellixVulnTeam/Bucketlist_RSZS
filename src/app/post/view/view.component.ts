@@ -1,24 +1,28 @@
-import { Component, OnInit } from '@angular/core';
-import { PostService } from '../post.service';
-import { Post } from '../post';
-import { bucketArrays } from '../bucketArrays';
-import { LottiePlayer } from '@lottiefiles/lottie-player';
+import { Component, OnInit } from "@angular/core";
+import { PostService } from "../post.service";
+import { Post } from "../post";
+import { bucketArrays } from "../bucketArrays";
+import { LottiePlayer } from "@lottiefiles/lottie-player";
 
 @Component({
-  selector: 'app-view',
-  templateUrl: './view.component.html',
-  styleUrls: ['./view.component.css'],
+  selector: "app-view",
+  templateUrl: "./view.component.html",
+  styleUrls: ["./view.component.css"],
 })
 export class ViewComponent implements OnInit {
   BucketArrays: bucketArrays[] = [];
-  currDiv: string = '';
+  currDiv: string = "";
   email: string | undefined;
   Displaybucketlist: any = [];
   disableTextbox = false;
 
   form: any = {
-    email: 'asreena.zailan@celcom.com.my',
+    email: "asreena.zailan@celcom.com.my",
   };
+
+  reloadCurrentPage() {
+    window.location.reload();
+  }
 
   ShowDiv(divVal: string): void {
     this.currDiv = divVal;
@@ -48,7 +52,7 @@ export class ViewComponent implements OnInit {
 
   delete(email: any) {
     this.postService.delete(email).subscribe((res) => {
-      console.log('Post deleted successfully!');
+      console.log("Post deleted successfully!");
     });
   }
 }

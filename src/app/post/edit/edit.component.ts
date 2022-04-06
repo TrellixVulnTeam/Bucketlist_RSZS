@@ -9,6 +9,7 @@ import {
   FormBuilder,
   FormArray,
 } from "@angular/forms";
+import { ConnectableObservable } from "rxjs";
 
 @Component({
   selector: "app-edit",
@@ -21,6 +22,7 @@ export class EditComponent implements OnInit {
   currAdd: string = "";
   Displaybucketlist: any = [];
   isDisabled: boolean = true;
+  isLoading: boolean = true;
 
   enable() {
     this.isDisabled = false;
@@ -56,13 +58,21 @@ export class EditComponent implements OnInit {
   ) {}
 
   bucketArrays = {
-    bucketItems: [{ items: "" }],
+    bucketItems: new Array({ items: "" }),
   };
 
+  ngAfterViewInit() {}
+
   ngOnInit(): void {
+    console.log("0", this.isLoading);
     this.postService.getMyBucketlist().subscribe((data: bucketArrays[]) => {
-      this.BucketArrays = data;
-      console.log(this.bucketArrays);
+      this.BucketArrays = data[0].bucketItems;
+      console.log(this.BucketArrays);
+      // for (var i = 0; i < this.BucketArrays.length; i++) {
+      //   this.bucketArrays.bucketItems[i] = this.BucketArrays[i];
+      // }
+      console.log("1", this.bucketArrays);
+      this.isLoading = false;
     });
   }
 
@@ -96,7 +106,7 @@ export class EditComponent implements OnInit {
   }
 
   submit(...args: [value: any]) {
-    const { bucketItems, items } = this.form.value;
+    const { bucketItems } = this.form.value;
     this.BucketArrays = bucketItems;
     console.log(this.BucketArrays);
     this.postService.update(bucketItems).subscribe((res: any) => {
